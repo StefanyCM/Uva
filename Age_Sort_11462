@@ -1,0 +1,31 @@
+# Uva
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+    
+        Scanner tec =  new Scanner(System.in);
+        int cas;
+        while((cas = tec.nextInt())!= 0){
+            int num[] = new int [cas];
+            
+            
+            for (int i = 0; i < cas; i++) {
+                num[i]=tec.nextInt();
+            }
+            
+            Arrays.sort(num);
+            
+            for (int i = 0; i < num.length; i++) {
+                System.out.print(num[i]);
+                if(i!=(num.length-1)){
+                    System.out.print(" ");
+                }
+            }
+             System.out.println();
+        }
+    }
+    
+}
